@@ -1,0 +1,131 @@
+:root {
+    font-size: 62.5%;
+}
+
+.hide {
+    display: none;
+}
+body {
+    background: linear-gradient(123deg, #190361 0%, #BB00FF 100%);
+    font-size: 1.6rem;
+}
+
+main {
+    background-color: white;
+    width: 35.8rem;
+    height: 35.8rem;
+    border-radius: .5rem;
+    padding: 4.8rem 6.4rem 6.4rem;
+
+    
+    margin: 10.0rem auto;
+    text-align: center;
+    color: #34355B;
+
+    box-shadow: 0 2.0rem 5.0rem rgba(0, 0, 0, 0.80)
+
+}
+
+/*screen 1 */
+
+h1, h2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.5rem;
+    margin-top: 1.4rem;
+    margin-bottom: 2.0rem;
+}
+
+#screen1 img:hover {
+    cursor: pointer;
+    animation: vibrate-2 0.3s linear infinite both;
+}
+
+    @keyframes vibrate-2 {
+        0% {
+          -webkit-transform: translate(0);
+                  transform: translate(0);
+        }
+        20% {
+          -webkit-transform: translate(2px, -2px);
+                  transform: translate(2px, -2px);
+        }
+        40% {
+          -webkit-transform: translate(2px, 2px);
+                  transform: translate(2px, 2px);
+        }
+        60% {
+          -webkit-transform: translate(-2px, 2px);
+                  transform: translate(-2px, 2px);
+        }
+        80% {
+          -webkit-transform: translate(-2px, -2px);
+                  transform: translate(-2px, -2px);
+        }
+        100% {
+          -webkit-transform: translate(0);
+                  transform: translate(0);
+        }
+      }
+
+/*screen 2 */
+
+.luck {
+    background-color: #E4EDF1;
+    padding: 1.0rem;
+
+    font-family: "Dancing Script", cursive;
+    font-size: 2.4rem;
+    color: black;
+    margin-bottom: 1.7rem;
+
+    box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, 0.50);
+
+    animation: scale-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes scale-in-bottom {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 1;
+    }
+  }
+  
+
+button {
+    background: #FF9500;
+    color: white;
+    font: "DM Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+    border: none;
+    border-radius: .4rem;
+
+    padding: 1.6rem;
+    margin-top: 1.7rem;
+
+    box-shadow: 0 .4rem .4rem rgba(0, 0, 0, 0.50)
+
+}
+
+button:hover {
+    background-color: #ff7b00;
+    cursor: pointer;
+}
+
